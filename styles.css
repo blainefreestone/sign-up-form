@@ -9,6 +9,24 @@ body {
     padding: 0;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    width: 66%;
+    font-size: 38px;
+    margin-top: 0;
+    
+    text-align: center;
+}
+
+.header img {
+    width: 135px;
+}
+
 .information {
     background-color: whitesmoke;
     margin: 0;
