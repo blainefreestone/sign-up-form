@@ -43,6 +43,12 @@ body {
 
 .information button {
     background-color: rgb(137, 157, 163);
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    padding: .75rem 1.25rem;
 }
 
 #sign-up-form {
