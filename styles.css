@@ -1,5 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 body {
@@ -46,7 +47,9 @@ body {
     border: none;
     border-radius: 8px;
 
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: whitesmoke;
 
     padding: .75rem 1.25rem;
 }
@@ -59,6 +62,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 0.2rem;
 
-    margin: 1rem 0;
+    margin: .75rem 0;
+}
+
+#sign-up-form label {
+    position: relative;
+    left: 7px;
+    top: 25px;
+    font-size: 14px;
+    color: dimgray;
+}
+
+#sign-up-form input[type="text"],
+#sign-up-form input[type="email"],
+#sign-up-form input[type="password"] {
+    padding: 1.35rem .75rem .75rem .75rem;
+    
+    border: solid 1px rgb(200,200,200);
+    border-radius: 4px;
+    background-color: rgb(232, 239, 241);
+}
+
+#sign-up-form input:hover {
+    border: solid 1px grey;
+}
+
+#sign-up-form input:focus {
+    border: solid 1px dimgray;
 }
