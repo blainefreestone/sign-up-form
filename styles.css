@@ -27,11 +27,32 @@ body {
     width: 135px;
 }
 
+.information,
+#sign-up-form {
+    margin: 0;
+    padding: 5% 10%;
+}
+
 .information {
     background-color: whitesmoke;
-    margin: 0;
+}
+
+.information div {
+    margin: 1rem 0;
+}
+
+.information button {
+    background-color: rgb(137, 157, 163);
 }
 
 #sign-up-form {
     background-color: rgb(232, 239, 241);
+}
+
+#sign-up-form .form-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: 1rem 0;
 }
