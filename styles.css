@@ -113,12 +113,16 @@ body {
     }
 
     .header {
+        padding: 20vh 0;
+        width: 60%;
+    }
+
+    .logo-title-combo {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
-        padding: 20vh 0;
-        width: 60%;
+
+        padding: 0 1rem;
     }
 
     .header h1 {
