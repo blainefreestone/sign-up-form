@@ -10,13 +10,13 @@ body {
     padding: 0;
 }
 
-.header {
+.logo-title-combo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header h1 {
+.logo-title-combo h1 {
     width: 66%;
     font-size: 38px;
     margin-top: 0;
@@ -24,7 +24,7 @@ body {
     text-align: center;
 }
 
-.header img {
+.logo-title-combo img {
     width: 135px;
 }
 
@@ -62,15 +62,15 @@ body {
 }
 
 .information button:active {
-    padding: .7rem 1.2rem;
-    margin: .05rem .05rem;
+    padding: .7rem 1.15rem;
+    margin: .05rem .1rem;
 }
 
 #sign-up-form {
     background-color: rgb(232, 239, 241);
 }
 
-#sign-up-form .form-block {
+#sign-up-form .form-inputs .form-block {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -87,9 +87,7 @@ body {
     color: dimgray;
 }
 
-#sign-up-form input[type="text"],
-#sign-up-form input[type="email"],
-#sign-up-form input[type="password"] {
+#sign-up-form input {
     padding: 1.35rem .75rem .75rem .75rem;
     
     border: solid 1px rgb(200,200,200);
@@ -105,7 +103,47 @@ body {
     border: solid 1px dimgray;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) and (max-width: 1100px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+  
+    .header {
+        padding: 20vh 0;
+        width: 60%;
+    }
+
+    .logo-title-combo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 0 1rem;
+    }
+
+    .header h1 {
+        flex: 0;
+        width: 60%;
+    }
+
+    .header img {
+        position: relative;
+        bottom: 25px;
+    }
+
+    #sign-up-form .form-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sign-up-form .form-inputs .form-block {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
     body {
       display: flex;
       flex-direction: row;
@@ -133,5 +171,16 @@ body {
     .header img {
         position: relative;
         bottom: 25px;
+    }
+
+    #sign-up-form .form-inputs {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        column-gap: 10px;
+    }
+
+    #sign-up-form .form-inputs .form-block {
+        margin: 0;
     }
 }
