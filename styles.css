@@ -129,47 +129,7 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 750px) and (max-width: 1100px) {
-    body {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-  
-    .header {
-        padding: 20vh 0;
-        width: 60%;
-    }
-
-    .logo-title-combo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        padding: 0 1rem;
-    }
-
-    .header h1 {
-        flex: 0;
-        width: 60%;
-    }
-
-    .header img {
-        position: relative;
-        bottom: 25px;
-    }
-
-    #sign-up-form .form-inputs {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #sign-up-form .form-inputs .form-block {
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 750px) {
     body {
       display: flex;
       flex-direction: row;
@@ -201,8 +161,7 @@ a {
 
     #sign-up-form .form-inputs {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         column-gap: 17px;
     }
 
