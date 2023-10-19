@@ -70,6 +70,10 @@ body {
     background-color: rgb(232, 239, 241);
 }
 
+#sign-up-form legend {
+    margin-bottom: 1rem;
+}
+
 #sign-up-form .form-inputs .form-block {
     display: flex;
     flex-direction: column;
@@ -82,7 +86,7 @@ body {
 #sign-up-form label {
     position: relative;
     left: 7px;
-    top: 25px;
+    bottom: 59px;
     font-size: 14px;
     color: dimgray;
 }
@@ -101,6 +105,28 @@ body {
 
 #sign-up-form input:focus {
     border: solid 1px dimgray;
+}
+
+#sign-up-form input:not(:placeholder-shown):invalid {
+    border-color: rgb(210, 30, 58);
+}
+
+#sign-up-form input:not(:placeholder-shown):invalid + label {
+    color:rgb(210, 30, 58);
+}
+
+#sign-up-form input:not(:placeholder-shown):valid {
+    border-color: rgb(34, 139, 34);
+}
+
+#sign-up-form input:not(:placeholder-shown):valid + label {
+    color: rgb(34, 139, 34);
+}
+
+a {
+    color: rgb(137, 157, 163);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1100px) {
@@ -177,7 +203,7 @@ body {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 33% 33% 33%;
-        column-gap: 10px;
+        column-gap: 17px;
     }
 
     #sign-up-form .form-inputs .form-block {
